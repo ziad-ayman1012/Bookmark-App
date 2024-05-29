@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    background-color: #F7ECDE;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h1{
+     font-family: "Pacifico", cursive;
+     font-weight: 900;
+     display: inline-block;
+     position: relative;
+}
+h1::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #FEC260;
+    width: 100%;
+    height: 20px;
+    z-index: -1;
+}
+h1:hover:after{
+    height: 40px;
+    transition: 0.3s;
+}
+
+h2{
+    font-family: "Righteous", sans-serif;
+        font-size: 2.2rem;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    color: transparent;
+    
+}
+.sec-body{
+    border-top: 2px;
+    border-bottom: 2px;
+    border-color: black;
+    border-style: dotted;
+    border-right: 0;
+    border-left: 0;
+}
+.form-control:focus{
+    color: #212529;
+    background-color: #fff;
+    border-color: #d99c39;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+}
+
+.btn-tomato{
+    --bs-btn-bg: #D1512D;
+    
+}
+.btn:hover.submit{
+    background-color: #D1512D;
+    color: white;
+}
+.btn-light-green{
+    --bs-btn-bg: #8A9E23;
+    
+}
+
+.btn-light-red{
+    --bs-btn-bg: #D30820;
+}
+.btn:hover.visit{
+    background-color: #8A9E23;
+    color: white;
+}
+.btn:hover.delete{
+    background-color: #D30820;
+    color: white;
+}

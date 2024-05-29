@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <title>Bookmark</title>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="container ">
+                <div class="sec-header text-center">
+                                    <h1 class="display-2 my-5">Bookmarker</h1>
+                    
+                </div>
+                <div class="sec-body w-100 py-2 mt-3 mb-4">
+                    <h2 class="mt-4 mb-2 text-center"> <i class="fas fa-bookmark mx-2"></i>Bookmark your favorite sites<i class="mx-2 fas fa-bookmark"></i></h2>
+                    <label for="siteName" class="fw-bold my-1"> <i class="fas fa-book-bookmark mx-2"></i> Site Name</label>
+                    <input oninput="validName(this)" type="text" id="siteName" class=" form-control mb-2" value="" placeholder="Bookmark Name">
+                    <div class="alert alert-danger py-2 text-capitalize d-none">Site Name Must Be Starts With cabital letter.. </div>
+                    <label for="siteUrl" class="fw-bold my-1"> <i class="fas fa-link mx-2"></i> Site URL</label>
+                    <input oninput="validUrl(this)" type="email" id="siteUrl" class="form-control mb-2" value="" placeholder="Website URL">
+                    <div class="alert alert-danger py-2 d-none">Site URL Must Ends With (.com) </div>
+                    <div class="form-btn text-center">
+                        <button class="btn btn-tomato text-white px-5 my-3 submit" onclick="addSite()" type="button">Submit</button>
+                    </div>
+                    <div id="alertForm" class="alert alert-danger py-2 d-none text-center">Form Invalid</div>
+                </div>
+                <table class="table my-3 text-center">
+                    <thead>
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </thead>
+                    <tbody class=" py-3" id="rowData">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/index.js"></script>
+    <a href="https://www.amazon.eg/" target="_blank">amazon</a>
+</body>
+</html>
